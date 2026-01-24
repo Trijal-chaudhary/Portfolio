@@ -1,0 +1,36 @@
+.HeroTextCont{
+  position: absolute;
+  width: 50%;
+  top: 30%;
+  padding: 12px 3rem;
+}
+.Hello{
+  color: aliceblue;
+  font-size: 3rem;
+}
+.Im{
+  color: aliceblue;
+  font-size: 5rem;
+}
+.Showing{
+  font-size: 4.5rem;
+}
+
+@media (max-width: 678px){
+  .HeroTextCont{
+    width: 90%;
+    z-index: 5;
+    top: auto;
+    bottom: 20%;
+    padding: 12px 1rem;
+
+  }
+  .Showing{
+    font-size: 1.8rem;
+  }
+  .Hello{
+    /* color: #fca311; */
+    font-size: 2.5rem;
+  }
+
+}

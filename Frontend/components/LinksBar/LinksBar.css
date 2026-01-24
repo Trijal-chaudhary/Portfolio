@@ -1,0 +1,31 @@
+.LinksCont {
+  position: absolute;
+  right: 12px;
+  top: 30%;
+
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  flex-direction: column;
+  padding: 16px 15px;
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.06); 
+  backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+
+  z-index: 100;
+}
+.LinksIons img{
+  width: 40px;
+}
+.githubIcon {
+  filter: brightness(0) invert(1);
+}
+@media (max-width:678px){
+  .LinksCont{
+    display: none;
+  }
+}

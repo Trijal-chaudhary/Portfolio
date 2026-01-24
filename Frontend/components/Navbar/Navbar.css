@@ -1,0 +1,58 @@
+.NavCont {
+  position: absolute;
+  top: 12px;
+  left:12px;
+
+  display: flex;
+  gap: 24px;
+  align-items: center;
+
+  padding: 14px 32px;
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.06); 
+  backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+
+  z-index: 100;
+}
+.Hamb{
+  display: none;
+}
+.nav {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s ease;
+  background: rgba(255, 255, 255, 0.06); 
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  
+  padding: 8px 13px;
+  border-radius: 999px;
+}
+.navHamb{
+  display: none;
+}
+@media (max-width: 678px) {
+  .nav{
+    /* display: none; */
+  }
+  .navHamb{
+    display: block;
+  }
+  .Hamb{
+    display: block;
+    /* color: rgba(255, 255, 255, 0.85); */
+    fill: rgba(255, 255, 255, 0.85);
+    height: 15px;
+    z-index: 150;
+  }
+  .NavCont{
+    flex-direction: column;
+  border-radius: 9px;
+  }
+}
