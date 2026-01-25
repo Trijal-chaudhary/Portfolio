@@ -22,6 +22,13 @@ html, body {
   min-height: 200vh;
   
 }
+.ImageProject1{
+  height: 6rem;
+  width: auto;
+  position: absolute;
+  right: 41%;
+  top: 1%;
+}
 .HomeCont{
   width: 100vw;
   height: 100vh;
@@ -30,4 +37,35 @@ html, body {
   z-index: 1;
   overflow-y: hidden;
   scroll-snap-align: start;
+}
+.Project1{
+  position: absolute;
+  top: 3%;
+  right: 40%;
+  color: #fca311;
+  font-size: 3rem;
+  letter-spacing: 1px;
+
+  background: linear-gradient(
+    to right,
+    #b86b00,
+    #fca311,
+    #ffd166
+  );
+  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-shadow:
+    0 0 15px rgba(252, 163, 17, 0.35);
+
+  margin-bottom: 1rem;
+}
+.Project1ImageLap{
+  position: absolute;
+  top: 5%;
+  right: 22%;
+  width: 55%;
+  height: auto;
+  z-index: 2;
 }

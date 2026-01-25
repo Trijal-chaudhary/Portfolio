@@ -15,6 +15,8 @@ import AboutText from "./About/AboutText/AboutText";
 import AboutImage from "./About/AboutImage/AboutImage";
 import SkillsText from "./Skills/SkillsText/SkillsText";
 import SkillsImage from "./Skills/SkillsImage/SkillsImage";
+import WorldTy from "./TechnologysUsed/Project1/WorldTy";
+import WorldTycoon from "./Projects/WorldTycoon/WorldTycoon";
 const Home = () => {
   const [renderStars, setRanderStars] = useState([]);
   const mousex = useMotionValue(0);
@@ -22,7 +24,15 @@ const Home = () => {
   const [currSection, setCurrSection] = useState(null);
   const x = useSpring(mousex);
   const y = useSpring(mousey);
-
+  const world = [
+    "React.js",
+    "Node.js",
+    "JavaScript",
+    "Mongoose",
+    "CSS",
+    "Express.js",
+    "Socket.io",
+  ];
   useEffect(() => {
     const track = (e) => {
       mousex.set(e.clientX);
@@ -81,7 +91,11 @@ const Home = () => {
         <LinksBar />
       </section>
       <section id="Projects" className="HomeCont section">
-        <h1>World Tycoon</h1>
+        <img className="ImageProject1" src="Project/WorldLogo.png" alt="" />
+        {/* <h1 className="Project1">World Tycoon</h1> */}
+        <img className="Project1ImageLap" src="Project/project1.png" alt="" />
+        <WorldTy tech={world} />
+        <WorldTycoon />
       </section>
       <motion.div
         className="back"

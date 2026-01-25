@@ -1,0 +1,144 @@
+.WorldTycoonCont {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.descripCont {
+  position: absolute;
+  left: 1.5%;
+  top: 12%;
+  width: 29%;
+  height: 68%;
+  color: aliceblue;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.descripCont h1 {
+  font-size: 1.9rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+
+  border-left: 5px solid #fca311;
+  padding-left: 14px;
+  margin-bottom: 18px;
+}
+.FeatureCont{
+  position: absolute;
+  right: 1.5%;
+  top: 12%;
+  width: 29%;
+  height: 68%;
+  color: aliceblue;
+
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.FeatureCont h1{
+  font-size: 1.9rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+
+  border-left: 5px solid #fca311;
+  padding-left: 14px;
+  margin-bottom: 18px;
+}
+.ParaCont {
+  height: 100%;
+  padding: 18px 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.05);
+
+  backdrop-filter: blur(14px);
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+}
+
+
+.ParaCont h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+
+  background: linear-gradient(
+    to right,
+    #b86b00,
+    #fca311,
+    #ffd166
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.FeatCard{
+  height: 100%;
+  padding: 18px 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.05);
+
+  backdrop-filter: blur(14px);
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.ParaCont p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: rgba(240, 248, 255, 0.9);
+  text-align: justify;
+}
+.FeatCard p{
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: rgba(240, 248, 255, 0.9);
+  text-align: justify;
+}
+
+.FeatCont h3{
+  font-size: 1.1rem;
+  background: linear-gradient(
+    to right,
+    #b86b00,
+    #fca311,
+    #ffd166
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.LinksContProject1 {
+  position: absolute;
+  right: 46%;
+  bottom: 2%;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  /* flex-direction: column; */
+  padding: 14px 15px;
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.06); 
+  backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+
+  z-index: 100;
+}
+.LinksIons1 img{
+  width: 40px;
+}
+.githubIcon1 {
+  filter: brightness(0) invert(1);
+}

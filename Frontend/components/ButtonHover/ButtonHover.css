@@ -1,0 +1,29 @@
+.ButtonHoverAnimation{
+  position: absolute;
+  bottom: 3%;
+  right: 1.5%;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  padding: 10px 40px;
+  display: flex;
+  color: aliceblue;
+  overflow: hidden;
+}
+.ButtonHoverAnimation:hover{
+  cursor: pointer;
+}
+.DotScalable2{
+  height: 5px;
+  width: 5px;
+  background-color:#fca311;
+  border-radius: 999px;
+  position: absolute;
+  left: 15px;
+  top: 48%;
+}
+.ButtonHoverAnimation h2{
+  font-size: 1.2rem;
+  z-index: 2;
+}
