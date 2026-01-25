@@ -1,0 +1,24 @@
+.HeroImgSkills{
+  width: 50%;
+  position: absolute;
+  top: 3%;
+  right: 0%;
+  overflow-y: hidden;
+}
+.HeroImgSkills img{
+  width:80%;
+}
+@media (max-width:678px){
+  .HeroImgSkills{
+    width: 100%;
+    bottom: -10%;
+    top: auto;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    /* border: 5px solid wheat; */
+  }
+  .HeroImgSkills img{
+    width:100%;
+  }
+}

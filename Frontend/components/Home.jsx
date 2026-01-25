@@ -13,6 +13,8 @@ import HeroText from "./Texts/HeroText/HeroText";
 import HeroImage from "./HeroImage/HeroImage";
 import AboutText from "./About/AboutText/AboutText";
 import AboutImage from "./About/AboutImage/AboutImage";
+import SkillsText from "./Skills/SkillsText/SkillsText";
+import SkillsImage from "./Skills/SkillsImage/SkillsImage";
 const Home = () => {
   const [renderStars, setRanderStars] = useState([]);
   const mousex = useMotionValue(0);
@@ -73,7 +75,14 @@ const Home = () => {
         <AboutImage />
         <AboutText />
       </section>
-      <section id="Skills" className="HomeCont section"></section>
+      <section id="Skills" className="HomeCont section">
+        <SkillsText />
+        <SkillsImage />
+        <LinksBar />
+      </section>
+      <section id="Projects" className="HomeCont section">
+        <h1>World Tycoon</h1>
+      </section>
       <motion.div
         className="back"
         style={{

@@ -1,0 +1,101 @@
+.SkillTxtCont {
+  position: absolute;
+  top: 10%;
+  left: 2%;
+  height: 80%;
+  width: 45%;
+  color: aliceblue;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.SkillTxtCont h1 {
+  font-size: 2.8rem;
+  font-weight: 600;
+  border-left: 5px solid #fca311;
+  padding-left: 14px;
+  margin-bottom: 10px;
+}
+
+.SkillCont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  padding: 14px 30px;
+}
+
+.SkillCont h2 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  min-width: 160px;
+  color: rgba(240, 248, 255, 0.9);
+}
+.barcont {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.bar3 {
+  width: 18rem;
+  height: 1rem;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(12px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+
+  overflow: hidden;
+}
+
+.barcont h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #fca311;
+  min-width: 40px;
+  text-align: right;
+}
+.bar-fill3{
+  background: linear-gradient(
+  to right,
+  #b86b00,
+  #fca311
+);
+}
+@media (max-width:678px){
+  .SkillTxtCont h1{
+    font-size: 1.6rem;
+  margin-bottom: 3px;
+
+  }
+  .SkillCont{
+  padding: 6px 10px;
+  gap: 0px;
+  }
+  .SkillTxtCont{
+    height: 31%;
+    top: 12%;
+    width: 95%;
+
+  }
+  .SkillCont h2{
+    font-size: 0.65rem;
+    min-width: auto;
+  }
+  .bar3{
+    width: 10rem;
+    height: 0.7rem;
+  }
+  .barcont{
+    gap: 10px;
+  }
+}
