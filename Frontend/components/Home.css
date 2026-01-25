@@ -1,6 +1,12 @@
 *{
   margin: 0px;
+}
+html, body {
+  height: 100%;
+  overflow-y: scroll;
   overflow-x: hidden;
+
+  scroll-snap-type: y mandatory;
 }
 .back {
   position: fixed;
@@ -9,21 +15,18 @@
   width: 100vw;
   height: 100vh;
   z-index: -1;    
-  /* background-color: #020617; */
   inset: 0;
 }
 .home {
-  /* position: relative; */
-  /* height: 100vh;              MUST */
-  /* background: #020617;        dark background */
-  /* overflow: hidden; */
+  min-height: 200vh;
+  
 }
 .HomeCont{
   width: 100vw;
   height: 100vh;
-  /* position: absolute; */
   position: relative;
   background-color: transparent;
   z-index: 1;
   overflow-y: hidden;
+  scroll-snap-align: start;
 }
