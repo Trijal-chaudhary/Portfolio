@@ -11,6 +11,7 @@ import Navbar from "./Navbar/Navbar";
 import LinksBar from "./LinksBar/LinksBar";
 import HeroText from "./Texts/HeroText/HeroText";
 import HeroImage from "./HeroImage/HeroImage";
+import AboutText from "./About/AboutText/AboutText";
 const Home = () => {
   const [renderStars, setRanderStars] = useState([]);
   const mousex = useMotionValue(0);
@@ -55,7 +56,9 @@ const Home = () => {
         <HeroText />
         <HeroImage />
       </div>
-      <div className="HomeCont"></div>
+      <div className="HomeCont">
+        <AboutText />
+      </div>
       <motion.div
         className="back"
         style={{
