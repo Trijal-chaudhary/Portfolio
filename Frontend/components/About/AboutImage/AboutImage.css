@@ -1,15 +1,15 @@
-.HeroImg{
+.HeroImgAbout{
   width: 50%;
   position: absolute;
   top: 3%;
-  right: 2%;
+  left: 0%;
   overflow-y: hidden;
 }
-.HeroImg img{
+.HeroImgAbout img{
   width:80%;
 }
 @media (max-width:678px){
-  .HeroImg{
+  .HeroImgAbout{
     width: 100%;
     bottom: 0%;
     top: auto;
@@ -17,8 +17,10 @@
     /* justify-content: center;
     align-items: center; */
     /* border: 5px solid wheat; */
+    display: none;
   }
-  .HeroImg img{
+  .HeroImgAbout img{
     width:100%;
+    display: none;
   }
 }

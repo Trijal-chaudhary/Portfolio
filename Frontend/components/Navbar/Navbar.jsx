@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import "./Navbar.css";
-const Navbar = () => {
+const Navbar = ({ currSection, ScrollToSection }) => {
   const [renderNav, setRenderNav] = useState(false);
   const handleRenderNav = () => {
     setRenderNav((prev) => !prev);
@@ -40,7 +40,8 @@ const Navbar = () => {
           whileHover={{
             scale: 1.08,
           }}
-          className="nav"
+          className={`nav ${currSection === "Home" ? "active" : ""}`}
+          onClick={() => ScrollToSection("Home")}
         >
           Home
         </motion.div>
@@ -48,7 +49,8 @@ const Navbar = () => {
           whileHover={{
             scale: 1.08,
           }}
-          className="nav"
+          className={`nav ${currSection === "About" ? "active" : ""}`}
+          onClick={() => ScrollToSection("About")}
         >
           About me
         </motion.div>
@@ -56,7 +58,8 @@ const Navbar = () => {
           whileHover={{
             scale: 1.08,
           }}
-          className="nav"
+          className={`nav ${currSection === "Skills" ? "active" : ""}`}
+          onClick={() => ScrollToSection("Skills")}
         >
           Skills
         </motion.div>

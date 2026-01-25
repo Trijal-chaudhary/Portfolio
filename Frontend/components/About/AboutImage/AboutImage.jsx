@@ -9,7 +9,7 @@ const HeroImage = () => {
     }
   }, []);
   return (
-    <div className="HeroImg">
+    <div className="HeroImgAbout">
       <motion.img
         initial={renderImg ? { x: "0%", y: "5%", overflow: "hidden" } : {}}
         animate={

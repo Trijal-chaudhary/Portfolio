@@ -12,11 +12,12 @@ import LinksBar from "./LinksBar/LinksBar";
 import HeroText from "./Texts/HeroText/HeroText";
 import HeroImage from "./HeroImage/HeroImage";
 import AboutText from "./About/AboutText/AboutText";
+import AboutImage from "./About/AboutImage/AboutImage";
 const Home = () => {
   const [renderStars, setRanderStars] = useState([]);
   const mousex = useMotionValue(0);
   const mousey = useMotionValue(0);
-
+  const [currSection, setCurrSection] = useState(null);
   const x = useSpring(mousex);
   const y = useSpring(mousey);
 
@@ -29,15 +30,26 @@ const Home = () => {
     window.addEventListener("mousemove", track);
     return () => window.removeEventListener("mousemove", track);
   }, []);
+  const ScrollToSection = (id) => {
+    const section = document.getElementById(id);
+    section?.scrollIntoView({ behavior: "smooth" });
+  };
 
   useEffect(() => {
-    if (window.innerWidth < 768) return; // disable on mobile
-
-    // const interval = setInterval(() => {
-    //   setRanderStars((prev) => [...prev, Date.now()]);
-    // }, 6800); // random timing
-
-    // return () => clearInterval(interval);
+    const sections = document.querySelectorAll(".section");
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((ele) => {
+          if (ele.isIntersecting) {
+            setCurrSection(ele.target.id);
+          }
+        });
+      },
+      {
+        threshold: 0.6,
+      }
+    );
+    sections.forEach((section) => observer.observe(section));
   }, []);
 
   const background = useMotionTemplate`
@@ -47,18 +59,21 @@ const Home = () => {
     transparent 60%), #020617`;
   return (
     <div className="home">
+      <Navbar currSection={currSection} ScrollToSection={ScrollToSection} />
+
       {[0, 1, 3, 4, 5].map((i) => (
         <ShotingStars key={i} />
       ))}
-      <div className="HomeCont">
-        <Navbar />
+      <section id="Home" className="HomeCont section">
         <LinksBar />
         <HeroText />
         <HeroImage />
-      </div>
-      <div className="HomeCont">
+      </section>
+      <section id="About" className="HomeCont section">
+        <AboutImage />
         <AboutText />
-      </div>
+      </section>
+      <section id="Skills" className="HomeCont section"></section>
       <motion.div
         className="back"
         style={{

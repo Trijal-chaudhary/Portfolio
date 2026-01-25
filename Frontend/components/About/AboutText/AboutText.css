@@ -48,6 +48,7 @@
   font-size: 0.85rem;
   line-height: 1.6;
   color: rgba(240, 248, 255, 0.9);
+  text-align: justify;
 }
 .phaseTextCont{
   display: flex;
@@ -82,4 +83,30 @@
 .GetToKnowMe h2{
   font-size: 1.2rem;
   z-index: 2;
+}
+@media (max-width: 678px){
+  .AbTexOuter{
+    width: 95%;
+  }
+  .AbPhases{
+    padding: 0.5rem;
+
+  }
+  .AbTexOuter h1{
+    font-size: 1.3rem;
+  }
+  .ImgPhaseCont{
+    display: none;
+  }
+  .phaseTextCont h2{
+    font-size: 1.1rem;
+    font-style: italic;
+  }
+  .phaseTextCont p{
+    font-size: 0.75rem;
+  }
+  .GetToKnowMe{
+    bottom: 10%;
+    right: 4%;
+  }
 }
