@@ -17,6 +17,7 @@ import SkillsText from "./Skills/SkillsText/SkillsText";
 import SkillsImage from "./Skills/SkillsImage/SkillsImage";
 import WorldTy from "./TechnologysUsed/Project1/WorldTy";
 import WorldTycoon from "./Projects/WorldTycoon/WorldTycoon";
+import PlayItText from "./PlayItText/PlayItText";
 const Home = () => {
   const [renderStars, setRanderStars] = useState([]);
   const mousex = useMotionValue(0);
@@ -96,6 +97,14 @@ const Home = () => {
         <img className="Project1ImageLap" src="Project/project1.png" alt="" />
         <WorldTy tech={world} />
         <WorldTycoon />
+        <PlayItText />
+      </section>
+      <section id="Projects" className="HomeCont section">
+        <img
+          className="LocalConnectLogo"
+          src="Project/LocalConnect/logo.png"
+          alt=""
+        />
       </section>
       <motion.div
         className="back"

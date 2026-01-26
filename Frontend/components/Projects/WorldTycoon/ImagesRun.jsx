@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./ImagesRun.css";
 import { motion, useScroll } from "framer-motion";
-const ImagesRun = () => {
+const ImagesRun = ({ playing }) => {
   // const Duration = 20;
-  const [inView, setInView] = useState(false);
+  const [isHover, setIsHover] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
   const imgURL = [
     "01.png",
     "02.png",
@@ -19,13 +20,37 @@ const ImagesRun = () => {
     "12.png",
     "13.png",
   ];
+  useEffect(() => {
+    if (window.innerWidth < 678) {
+      setIsMobile(true);
+    }
+  }, []);
   return (
-    <div className="parImgRun">
+    <motion.div
+      className="parImgRun"
+      style={playing ? {} : { display: "none" }}
+    >
       <div className="ImageContainer2">
         <motion.div
-          initial={{ x: 0 }}
-          whileInView={{ x: "-50%" }}
-          transition={{ duration: 120, repeat: Infinity, ease: "linear" }}
+          onMouseEnter={() => setIsHover(true)}
+          onMouseLeave={() => setIsHover(false)}
+          // initial={{ x: 0 }}
+          animate={
+            isMobile
+              ? playing
+                ? { y: "-50%" }
+                : {}
+              : playing
+              ? isHover
+                ? { x: undefined }
+                : { x: "-50%" }
+              : {}
+          }
+          transition={{
+            duration: isMobile ? 40 : 60,
+            repeat: isHover ? 0 : Infinity,
+            ease: "linear",
+          }}
           className="ImageCont25"
         >
           {imgURL.map((url, idx) => (
@@ -36,7 +61,7 @@ const ImagesRun = () => {
           ))}
         </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -1,0 +1,15 @@
+.PlayItTextCont{
+  filter: invert(1);
+  height: 150px;
+  width: 350px;
+  /* border: 2px solid wheat; */
+  position: absolute;
+  z-index: 100;
+  top: 71%;
+  left: -32px;
+  z-index: -1;
+  overflow: hidden;
+}
+.PlayItTextCont img{
+  height: 15rem;
+}

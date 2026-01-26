@@ -134,7 +134,7 @@
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 
-  z-index: 100;
+  /* z-index: 2; */
 }
 .LinksIons1 img{
   width: 40px;
@@ -142,6 +142,56 @@
 .githubIcon1 {
   filter: brightness(0) invert(1);
 }
-.ImagerunWor{
-  position: absolute;
+@media (max-width:678px){
+  .descripCont{
+    width: 96%;
+    height: 30%;
+    top: 8%;
+  }
+  .descripCont h1 {
+    font-size: 1rem;
+  }
+  .FeatureCont{
+    width: 96%;
+    top: 38.5%;
+    right: auto;
+    left: 1.5%;
+    height: 27.5%;
+  }
+  .FeatureCont h1{
+    font-size: 1rem;
+  }
+  .ParaCont{
+    padding: 6px 10px;
+    gap: 4px;
+    margin-top: -15px;
+  }
+  .ParaCont h2{
+    font-size: 0.8rem;
+  }
+  .FeatCard{
+    padding: 8px 10px;
+    gap: 0px;
+    margin-top: -15px;
+  }
+  .ParaCont p{
+    font-size: 0.6rem;
+  }
+  .FeatCard p{
+    font-size: 0.6rem;
+    line-height: 1.2;
+  }
+  .FeatCont h3{
+    font-size: 0.7rem;
+  }
+  .LinksContProject1{
+    right: auto;
+  bottom: 20%;
+  left: 3%;
+  padding: 8px 15px;
+
+  }
+  .LinksIons1 img{
+    width: 25px;
+  }
 }

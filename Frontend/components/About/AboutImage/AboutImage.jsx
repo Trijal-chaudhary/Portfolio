@@ -65,7 +65,7 @@ const HeroImage = () => {
           repeat: Infinity,
           repeatType: "mirror",
         }}
-        src="./public/images/heroPhoroBG.png"
+        src="./public/images/HeroPhoto2.png"
         alt=""
       />
     </div>

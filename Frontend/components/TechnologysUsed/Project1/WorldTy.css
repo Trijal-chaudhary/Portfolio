@@ -19,3 +19,14 @@
   justify-content: center;
   top: 71%;
 }
+@media (max-width:678px){
+  .tech{
+    font-size: 0.5rem;
+    padding: 3px 7px;
+  }
+  .WorldTyOuter{
+    width: 100%;
+    right: 1.5%;
+    top: 66.5%;
+  }
+}

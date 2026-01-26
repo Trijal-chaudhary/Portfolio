@@ -67,7 +67,8 @@ const Navbar = ({ currSection, ScrollToSection }) => {
           whileHover={{
             scale: 1.08,
           }}
-          className="nav"
+          className={`nav ${currSection === "Projects" ? "active" : ""}`}
+          onClick={() => ScrollToSection("Projects")}
         >
           Projects
         </motion.div>

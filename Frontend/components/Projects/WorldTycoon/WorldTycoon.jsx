@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "./WorldTycoon.css";
 import { motion } from "framer-motion";
 import ButtonHover from "../../ButtonHover/ButtonHover";
 import ImagesRun from "./ImagesRun";
+import PlayButton from "../../PlayButton/PlayButton";
 const WorldTycoon = () => {
+  const [playing, Setplaingstate] = useState(false);
   const anim = () => ({
     scale: 1.12,
     cursor: "pointer",
@@ -90,7 +92,8 @@ const WorldTycoon = () => {
           </div>
         </div>
         <ButtonHover text={"Details"} />
-        <ImagesRun />
+        <ImagesRun playing={playing} />
+        <PlayButton Setplaingstate={Setplaingstate} />
       </div>
     </>
   );

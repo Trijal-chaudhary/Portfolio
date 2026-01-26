@@ -1,0 +1,76 @@
+.playButtonCont{
+  position: absolute;
+  z-index: 100;
+  left: 4%;
+  bottom: 2%;
+  background: rgba(255, 255, 255, 0.06); 
+  backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  border-radius: 22px;
+  padding: 14px 26px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.playButtonCont svg{
+  width: 35px;
+  height: auto;
+  filter: invert(1);
+  cursor: pointer;
+}
+.discurrTot{
+  display: flex;
+  justify-content: space-between;
+  color: rgba(240, 248, 255, 0.85);
+  font-size: 0.65rem;
+  letter-spacing: 0.5px;
+}
+.seekBarcont{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.seekBarcont input[type="range"]{
+  width: 170px;
+  height: 6px;
+  appearance: none;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+
+
+
+
+.seekBarcont input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+
+  background: #fca311;
+  box-shadow: 0 0 10px rgba(252, 163, 17, 0.8);
+
+  margin-top: -4px;
+}
+
+.seekBarcont input[type="range"]::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #fca311;
+  border: none;
+}
+.seekBarcont input[type="range"]::-webkit-slider-runnable-track {
+  height: 6px;
+  border-radius: 999px;
+}
+@media (max-width:678px){
+  .playButtonCont{
+    left: 10%;
+    bottom: 3%;
+  }
+}

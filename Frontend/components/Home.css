@@ -28,6 +28,7 @@ html, body {
   position: absolute;
   right: 41%;
   top: 1%;
+  z-index: 10;
 }
 .HomeCont{
   width: 100vw;
@@ -38,7 +39,7 @@ html, body {
   overflow-y: hidden;
   scroll-snap-align: start;
 }
-.Project1{
+/* .Project1{
   position: absolute;
   top: 3%;
   right: 40%;
@@ -60,7 +61,7 @@ html, body {
     0 0 15px rgba(252, 163, 17, 0.35);
 
   margin-bottom: 1rem;
-}
+} */
 .Project1ImageLap{
   position: absolute;
   top: 5%;
@@ -68,4 +69,14 @@ html, body {
   width: 55%;
   height: auto;
   z-index: 2;
+}
+@media (max-width: 678px){
+  .Project1ImageLap{
+    display: none;
+  }
+  .ImageProject1{
+    height: 3rem;
+    right: 31%;
+    top: 2%;
+  }
 }

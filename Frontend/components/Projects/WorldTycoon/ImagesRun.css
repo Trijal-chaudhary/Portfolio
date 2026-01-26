@@ -39,13 +39,8 @@
   /* position: absolute; */
   flex-shrink: 0;
   flex-wrap: nowrap;
-  mask-image: linear-gradient(
-    to right,
-    rgba(0,0,0,0),
-    rgba(0,0,0,1) 20%,
-    rgba(0,0,0,1) 80%,
-    rgba(0,0,0,0),
-  );
+  cursor: pointer;
+  
 }
 .parImgRun{
   position: absolute;
@@ -53,12 +48,46 @@
   height: 100vh;
   background: rgba(255, 255, 255, 0.06); 
   backdrop-filter: blur(12px);
-
-  /* border: 1px solid rgba(255, 255, 255, 0.1); */
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
   z-index: 5;
   overflow-x: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media (max-width:678px){
+  .parImgRun{
+    flex-direction: column;
+  }
+  .ImageCont25{
+    height: max-content;  
+    display: flex;
+    flex-direction: column;
+  }
+  .ImageCont25 img{
+    height: auto;
+    width: 300px;
+    margin-top: 5px;
+  }
+  .ImageContainer2{
+    height: 60%;
+    justify-content: center;
+    align-items: start;
+    -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0),
+    rgba(0,0,0,1) 20%,
+    rgba(0,0,0,1) 80%,
+    rgba(0,0,0,0)
+  );
+
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0),
+    rgba(0,0,0,1) 20%,
+    rgba(0,0,0,1) 80%,
+    rgba(0,0,0,0)
+  );
+  }
+  
 }
