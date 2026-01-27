@@ -93,7 +93,10 @@ const WorldTycoon = () => {
         </div>
         <ButtonHover text={"Details"} />
         <ImagesRun playing={playing} />
-        <PlayButton Setplaingstate={Setplaingstate} />
+        <PlayButton
+          Setplaingstate={Setplaingstate}
+          source={"Audio/Project01Audio.mp3"}
+        />
       </div>
     </>
   );

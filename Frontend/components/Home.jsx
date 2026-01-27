@@ -18,6 +18,8 @@ import SkillsImage from "./Skills/SkillsImage/SkillsImage";
 import WorldTy from "./TechnologysUsed/Project1/WorldTy";
 import WorldTycoon from "./Projects/WorldTycoon/WorldTycoon";
 import PlayItText from "./PlayItText/PlayItText";
+import LocalConnectImage from "./Projects/LocalConnect/LocalConnectImage";
+import LocalConnect from "./Projects/LocalConnect/LocalConnect";
 const Home = () => {
   const [renderStars, setRanderStars] = useState([]);
   const mousex = useMotionValue(0);
@@ -105,6 +107,10 @@ const Home = () => {
           src="Project/LocalConnect/logo.png"
           alt=""
         />
+        <LocalConnectImage />
+        <WorldTy tech={world} />
+        <LocalConnect />
+        <PlayItText />
       </section>
       <motion.div
         className="back"

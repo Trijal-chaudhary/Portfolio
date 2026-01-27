@@ -1,0 +1,19 @@
+.LocalConnectImageCont{
+  position: absolute;
+  display: flex;
+  width: 98vw;
+  /* height: auto; */
+  top: 7%;
+  justify-content: space-between;
+  left: 1%;
+  align-items: center;
+  z-index: 5;
+}
+.LocalConnectImageCont .Laptop{
+  width: 52%;
+  height: auto;
+}
+.LocalConnectImageCont .Mobile{
+  width: 24%;
+  height: auto;
+}

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./PlayButton.css";
-const PlayButton = ({ Setplaingstate }) => {
+const PlayButton = ({ Setplaingstate, source }) => {
   const [IsPlaying, SetIsPlaying] = useState(false);
   const [currentTime, SetCurrentTime] = useState(0);
   const [duration, SetDuration] = useState(0);
@@ -65,7 +65,7 @@ const PlayButton = ({ Setplaingstate }) => {
           value={currentTime}
           onChange={handelSeek}
         />
-        <audio ref={audioRef} src="Audio/Project01Audio.mp3" />
+        <audio ref={audioRef} src={source} />
         <div className="discurrTot">
           <p>{formatDuration(currentTime)}</p>
           <p>{formatDuration(duration)}</p>

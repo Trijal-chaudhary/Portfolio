@@ -17,7 +17,7 @@
   width: 35%;
   flex-wrap: wrap;
   justify-content: center;
-  top: 71%;
+  top: 75%;
 }
 @media (max-width:678px){
   .tech{
