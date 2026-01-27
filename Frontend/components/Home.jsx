@@ -22,6 +22,7 @@ import LocalConnectImage from "./Projects/LocalConnect/LocalConnectImage";
 import LocalConnect from "./Projects/LocalConnect/LocalConnect";
 import PravdhanImage from "./Projects/Pravdhan/PravdhanImage";
 import Pravdhan from "./Projects/Pravdhan/Pravdhan";
+import OtherProjects from "./Projects/OtherProjects/OtherProjects";
 const Home = () => {
   const [renderStars, setRanderStars] = useState([]);
   const mousex = useMotionValue(0);
@@ -133,6 +134,9 @@ const Home = () => {
         <PlayItText />
         <WorldTy tech={Prav} />
         <Pravdhan />
+      </section>
+      <section id="Projects" className="HomeCont section">
+        <OtherProjects />
       </section>
       <motion.div
         className="back"

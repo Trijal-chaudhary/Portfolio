@@ -1,0 +1,18 @@
+.ImageCont270{
+  width: max-content;
+  height: 100%;
+  /* position: absolute; */
+  flex-shrink: 0;
+  flex-wrap: nowrap;
+  /* cursor: pointer; */
+  overflow-x: hidden;
+  display: flex;
+}
+.ImageCont270 img{
+  height: auto;
+  width: 100%;
+  margin-right: 20px;
+
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
