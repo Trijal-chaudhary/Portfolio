@@ -1,0 +1,59 @@
+.PravDisCont{
+  position: absolute;
+  left: 45%;
+  top: 10%;
+  width: 36.5%;
+  height: 64%;
+  color: aliceblue;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.PravDisCont h1{
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+
+  border-left: 5px solid #fca311;
+  padding-left: 14px;
+  margin-bottom: 18px;
+}
+.PravConnectParaCont{
+  height: 100%;
+  padding: 10px 22px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.05);
+
+  backdrop-filter: blur(14px);
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.PravConnectParaCont h3{
+  font-size: 1rem;
+  font-weight: 600;
+
+  background: linear-gradient(
+    to right,
+    #b86b00,
+    #fca311,
+    #ffd166
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.PravConnectParaCont p{
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: rgba(240, 248, 255, 0.9);
+  text-align: justify;
+}
+.PravConnectParaCont span, h4{
+  font-weight: 600;
+  color: #fca311;
+
+}

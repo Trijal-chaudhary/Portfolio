@@ -20,6 +20,8 @@ import WorldTycoon from "./Projects/WorldTycoon/WorldTycoon";
 import PlayItText from "./PlayItText/PlayItText";
 import LocalConnectImage from "./Projects/LocalConnect/LocalConnectImage";
 import LocalConnect from "./Projects/LocalConnect/LocalConnect";
+import PravdhanImage from "./Projects/Pravdhan/PravdhanImage";
+import Pravdhan from "./Projects/Pravdhan/Pravdhan";
 const Home = () => {
   const [renderStars, setRanderStars] = useState([]);
   const mousex = useMotionValue(0);
@@ -35,6 +37,15 @@ const Home = () => {
     "CSS",
     "Express.js",
     "Socket.io",
+  ];
+  const Prav = [
+    "EJS",
+    "Node.js",
+    "JavaScript",
+    "Mongoose",
+    "CSS",
+    "Express.js",
+    "Geolocation",
   ];
   useEffect(() => {
     const track = (e) => {
@@ -112,7 +123,17 @@ const Home = () => {
         <LocalConnect />
         <PlayItText />
       </section>
-      <section id="Projects" className="HomeCont section"></section>
+      <section id="Projects" className="HomeCont section">
+        <img
+          className="LocalConnectLogo"
+          src="Project/Pravdhan/logo.png"
+          alt=""
+        />
+        <PravdhanImage />
+        <PlayItText />
+        <WorldTy tech={Prav} />
+        <Pravdhan />
+      </section>
       <motion.div
         className="back"
         style={{
