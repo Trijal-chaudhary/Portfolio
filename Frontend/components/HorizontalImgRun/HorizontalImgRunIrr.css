@@ -5,7 +5,6 @@
   flex-shrink: 0;
   flex-wrap: nowrap;
   /* cursor: pointer; */
-  overflow-x: hidden;
   display: flex;
 }
 .ImageCont270 img{

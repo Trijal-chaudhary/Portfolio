@@ -4,7 +4,7 @@ import HorizontalImgRunIrr from "../../HorizontalImgRun/HorizontalImgRunIrr";
 import HorizontalImgRunRev from "../../HorizontalImgRun/HorizontalImgRunRev";
 import ButtonHover from "../../ButtonHover/ButtonHover";
 import { motion } from "framer-motion";
-const OtherProjects = () => {
+const OtherProjects = ({ MyPro }) => {
   const anim = () => ({
     scale: 1.12,
     cursor: "pointer",
@@ -40,6 +40,7 @@ const OtherProjects = () => {
           folder={"/OtherProject"}
           device={"/SecreenShots"}
           urls={imgURL}
+          MyPro={MyPro}
         />
       </div>
       <div className="HorizontalRev">
@@ -47,6 +48,7 @@ const OtherProjects = () => {
           folder={"/OtherProject"}
           device={"/Logo"}
           urls={LogoURLs}
+          MyPro={MyPro}
         />
       </div>
       <div className="LinksContProject1">

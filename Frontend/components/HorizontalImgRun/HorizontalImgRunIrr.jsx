@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./HorizontalImgRunIrr.css";
 import { motion } from "framer-motion";
-const HorizontalImgRunIrr = ({ folder, device, urls }) => {
+const HorizontalImgRunIrr = ({ folder, device, urls, MyPro }) => {
   const [isHover, setIsHover] = useState(false);
 
   return (
@@ -9,9 +9,13 @@ const HorizontalImgRunIrr = ({ folder, device, urls }) => {
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
       initial={{ x: "-50%" }}
-      animate={{
-        x: "0%",
-      }}
+      animate={
+        MyPro === "MyProjects"
+          ? {
+              x: "0%",
+            }
+          : {}
+      }
       transition={{
         duration: 30,
         repeat: isHover ? 0 : Infinity,

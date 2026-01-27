@@ -135,9 +135,10 @@ const Home = () => {
         <WorldTy tech={Prav} />
         <Pravdhan />
       </section>
-      <section id="Projects" className="HomeCont section">
-        <OtherProjects />
+      <section id="MyProjects" className="HomeCont section">
+        <OtherProjects MyPro={currSection} />
       </section>
+      <section id="ContactMe" className="HomeCont section"></section>
       <motion.div
         className="back"
         style={{
