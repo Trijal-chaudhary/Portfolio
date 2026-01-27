@@ -112,6 +112,7 @@ const Home = () => {
         <LocalConnect />
         <PlayItText />
       </section>
+      <section id="Projects" className="HomeCont section"></section>
       <motion.div
         className="back"
         style={{

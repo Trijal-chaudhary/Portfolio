@@ -3,6 +3,7 @@ import "./LocalConnect.css";
 import ButtonHover from "../../ButtonHover/ButtonHover";
 import { motion } from "framer-motion";
 import PlayButton from "../../PlayButton/PlayButton";
+import LocalRunImg from "./LocalRunImg/LocalRunImg";
 const LocalConnect = () => {
   const [playing, Setplaingstate] = useState(false);
   const anim = () => ({
@@ -69,6 +70,7 @@ const LocalConnect = () => {
         Setplaingstate={Setplaingstate}
         source={"Audio/Project02Audio.mp3"}
       />
+      <LocalRunImg playing={playing} />
     </div>
   );
 };

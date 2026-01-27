@@ -42,13 +42,13 @@ const ImagesRun = ({ playing }) => {
                 : {}
               : playing
               ? isHover
-                ? { x: undefined }
+                ? {}
                 : { x: "-50%" }
               : {}
           }
           transition={{
-            duration: isMobile ? 40 : 60,
-            repeat: isHover ? 0 : Infinity,
+            duration: isHover ? 99999 : isMobile ? 40 : 50,
+            repeat: Infinity,
             ease: "linear",
           }}
           className="ImageCont25"
