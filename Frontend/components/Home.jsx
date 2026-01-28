@@ -23,6 +23,7 @@ import LocalConnect from "./Projects/LocalConnect/LocalConnect";
 import PravdhanImage from "./Projects/Pravdhan/PravdhanImage";
 import Pravdhan from "./Projects/Pravdhan/Pravdhan";
 import OtherProjects from "./Projects/OtherProjects/OtherProjects";
+import ContactMe from "./ContactMe/ContactMe";
 const Home = () => {
   const [renderStars, setRanderStars] = useState([]);
   const mousex = useMotionValue(0);
@@ -138,7 +139,10 @@ const Home = () => {
       <section id="MyProjects" className="HomeCont section">
         <OtherProjects MyPro={currSection} />
       </section>
-      <section id="ContactMe" className="HomeCont section"></section>
+      <section id="ContactMe" className="HomeCont section">
+        <ContactMe />
+        <LinksBar />
+      </section>
       <motion.div
         className="back"
         style={{

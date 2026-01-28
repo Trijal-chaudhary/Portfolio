@@ -1,0 +1,95 @@
+.ContactMeMainCont{
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+}
+.ContactMeTxt{
+  /* position: absolute; */
+  font-size: 2.6rem;
+  font-weight: 600;
+  /* top: 2%; */
+  letter-spacing: 0.5px;
+  height: 2.6rem;
+  margin-top: 2%;
+  border-left: 5px solid #fca311;
+  padding-left: 14px;
+  /* right: 42%; */
+  color: aliceblue;
+}
+.ContactInfoCont {
+  width: 100%;
+  max-width: 900px;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 40px;
+  margin-top: 5%;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+}
+
+.contactImgCont {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.contactImgCont img {
+  width: 300px;
+  max-width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.ContactInfoCont form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.ContactInfoCont input,
+.ContactInfoCont textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  font-size: 0.95rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.ContactInfoCont textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+
+
+
+.ContactInfoCont button {
+  margin-top: 10px;
+  padding: 14px;
+  border-radius: 10px;
+  border: none;
+  background: #fca311;
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.ContactInfoCont button:hover {
+  background: #ffb703;
+}
