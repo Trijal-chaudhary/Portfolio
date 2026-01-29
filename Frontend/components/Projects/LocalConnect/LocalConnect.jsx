@@ -4,12 +4,14 @@ import ButtonHover from "../../ButtonHover/ButtonHover";
 import { motion } from "framer-motion";
 import PlayButton from "../../PlayButton/PlayButton";
 import LocalRunImg from "./LocalRunImg/LocalRunImg";
+import { useNavigate } from "react-router-dom";
 const LocalConnect = () => {
   const [playing, Setplaingstate] = useState(false);
   const anim = () => ({
     scale: 1.12,
     cursor: "pointer",
   });
+  const navigate = useNavigate();
   return (
     <div className="LocalConnectContPar">
       <div className="LocalDisCont">
@@ -46,7 +48,9 @@ const LocalConnect = () => {
           </p>
         </div>
       </div>
-      <ButtonHover text={"Case Study"} />
+      <div onClick={() => navigate("/localConnect")}>
+        <ButtonHover text={"Case Study"} />
+      </div>
       <div className="LinksContProject1">
         <div className="LinksIons1 githubIcon">
           <motion.img

@@ -104,9 +104,10 @@
 .homeSVG{
   height: 35px;
   fill: white;
-  position: absolute;
+  position:fixed;
   top: 3%;
-  left: 15%;
+  /* left: 15%; */
+  left: 10%;
   cursor: pointer;
 }
 .homeSVG:hover{
