@@ -1,0 +1,33 @@
+.AboutPageOuterMain{
+  height: 200vh;
+  width: 100vw;
+  position: relative;
+}
+.contentAboutMeCont{
+  /* height: 100vh;
+  width: 100vw; */
+  /* position: sticky; */
+  display: flex;
+  top: 0;
+  justify-content: center;
+  /* position: relative; */
+}
+.outerBar {
+  height: 500px;
+  width: 12px;
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255,255,255,0.2);
+  overflow: hidden;
+}
+
+.innerBar {
+  width: 100%;
+  height: 0%;
+  background: red;
+  position: absolute;
+  top: 0;
+}
+

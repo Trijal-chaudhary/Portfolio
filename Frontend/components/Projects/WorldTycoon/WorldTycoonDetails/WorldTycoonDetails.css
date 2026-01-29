@@ -1,0 +1,115 @@
+.WorldTyDetMainOuter{
+  width: 100vw;
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.WorldTycoonVid{
+  width: 70%;
+  /* margin-top: 7%; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 15px;
+  border-radius: 14px;
+  /* background: rgba(255, 255, 255, 0.05); */
+
+  /* backdrop-filter: blur(14px); */
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.youtubeFrame{
+  width: 95%;
+  aspect-ratio: 16/9;
+  height: auto;
+}
+.AboutWorldT{
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.05);
+
+  backdrop-filter: blur(14px);
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 10px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 92%;
+}
+.AboutWorldT p{
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: rgba(240, 248, 255, 0.9);
+  text-align: justify;
+}
+.AboutWorldT h2{
+  font-size: 1.5rem;
+  font-weight: 600;
+
+  background: linear-gradient(
+    to right,
+    #b86b00,
+    #fca311,
+    #ffd166
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.ImageProject12{
+  height: 6rem;
+  width: auto;
+  /* position: absolute; */
+  /* right: 41%; */
+  top: 1%;
+  z-index: 10;
+}
+.gameplayExpMotImg{
+  width: 90%;
+  height: 300px;
+  overflow: hidden;
+  margin-left: 55px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  -webkit-mask-image: linear-gradient(
+    to right,
+    rgba(0,0,0,0),
+    rgba(0,0,0,1) 20%,
+    rgba(0,0,0,1) 80%,
+    rgba(0,0,0,0)
+  );
+
+  mask-image: linear-gradient(
+    to right,
+    rgba(0,0,0,0),
+    rgba(0,0,0,1) 20%,
+    rgba(0,0,0,1) 80%,
+    rgba(0,0,0,0)
+  );
+}
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cont span{
+  color: lightblue;
+  cursor: pointer;
+}
+.cont span:hover{
+  text-decoration: underline lightseagreen;
+}
+.homeSVG{
+  height: 35px;
+  fill: white;
+  position: absolute;
+  top: 3%;
+  left: 15%;
+  cursor: pointer;
+}
+.homeSVG:hover{
+  fill: #fca311;
+  scale: 1.05;
+}

@@ -1,13 +1,19 @@
 import React, { useState } from "react";
 import "./ButtonHover.css";
 import { motion } from "framer-motion";
-const ButtonHover = ({ text }) => {
+import { useNavigate } from "react-router-dom";
+const ButtonHover = ({ text, redir }) => {
   const [hover, sethover] = useState(false);
+  const navigiate = useNavigate();
+  const red = () => {
+    if (redir) navigiate(redir);
+  };
   return (
     <div
       className="ButtonHoverAnimation"
       onMouseEnter={() => sethover(true)}
       onMouseLeave={() => sethover(false)}
+      onClick={() => red}
     >
       <motion.div
         initial={{

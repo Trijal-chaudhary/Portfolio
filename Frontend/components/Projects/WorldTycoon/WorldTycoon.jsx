@@ -4,12 +4,14 @@ import { motion } from "framer-motion";
 import ButtonHover from "../../ButtonHover/ButtonHover";
 import ImagesRun from "./ImagesRun";
 import PlayButton from "../../PlayButton/PlayButton";
+import { useNavigate } from "react-router-dom";
 const WorldTycoon = () => {
   const [playing, Setplaingstate] = useState(false);
   const anim = () => ({
     scale: 1.12,
     cursor: "pointer",
   });
+  const navigate = useNavigate();
   return (
     <>
       <div className="WorldTycoonCont">
@@ -91,7 +93,10 @@ const WorldTycoon = () => {
             />
           </div>
         </div>
-        <ButtonHover text={"Details"} />
+        <div onClick={() => navigate("/worldTycoon")}>
+          <ButtonHover text={"Details"} />
+        </div>
+
         <ImagesRun playing={playing} />
         <PlayButton
           Setplaingstate={Setplaingstate}
