@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import "./WorldTycoonDetails.css";
+// import "./WorldTycoonDetails.css";
 import {
   motion,
   useMotionTemplate,
@@ -39,8 +39,6 @@ const PravdhanDetails = () => {
     "09.png",
     "10.png",
     "11.png",
-    "12.png",
-    "13.png",
   ];
   const navigate = useNavigate();
   return (
@@ -54,106 +52,166 @@ const PravdhanDetails = () => {
         <path d="M304 70.1C313.1 61.9 326.9 61.9 336 70.1L568 278.1C577.9 286.9 578.7 302.1 569.8 312C560.9 321.9 545.8 322.7 535.9 313.8L527.9 306.6L527.9 511.9C527.9 547.2 499.2 575.9 463.9 575.9L175.9 575.9C140.6 575.9 111.9 547.2 111.9 511.9L111.9 306.6L103.9 313.8C94 322.6 78.9 321.8 70 312C61.1 302.2 62 287 71.8 278.1L304 70.1zM320 120.2L160 263.7L160 512C160 520.8 167.2 528 176 528L224 528L224 424C224 384.2 256.2 352 296 352L344 352C383.8 352 416 384.2 416 424L416 528L464 528C472.8 528 480 520.8 480 512L480 263.7L320 120.3zM272 528L368 528L368 424C368 410.7 357.3 400 344 400L296 400C282.7 400 272 410.7 272 424L272 528z" />
       </svg>
       <div className="WorldTyDetMainOuter">
-        <img className="ImageProject12" src="Project/WorldLogo.png" alt="" />
+        <img
+          className="ImageProject12"
+          src="Project/Pravdhan/logo.png"
+          alt=""
+        />
+
         <div className="WorldTycoonVid">
-          <iframe
-            class="youtubeFrame"
-            src="https://www.youtube.com/embed/IyT0KLEcRm4?si=Z6K5GT2Ue-IBUkv0"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
           <div className="AboutWorldT">
-            <h2>About World Tycoon</h2>
+            <h2>Crowdsourced Civic Issue Reporting and Resolution System</h2>
+          </div>
+          <div className="AboutWorldT">
+            <h2>Background</h2>
+
             <p>
-              World Tycoon is a large-scale, multiplayer strategic board game
-              that transforms classic property-trading mechanics into a modern,
-              real-time global experience. Designed for up to four players, the
-              game expands beyond a traditional board, placing players into an
-              immersive world where economic power, strategic planning, and
-              timely decisions determine victory.
-            </p>
-            <p>
-              In World Tycoon, players don’t just roll dice and collect
-              rent—they step into the role of global leaders, industrial
-              tycoons, or financial strategists competing to dominate the world
-              economy. Every move carries weight, and every asset can shift the
-              balance of power.
+              Local governments often face difficulties in identifying,
+              prioritizing, and resolving everyday civic issues such as
+              potholes, broken streetlights, water leakage, sanitation failures,
+              and waste management problems. Although citizens encounter these
+              issues frequently, existing complaint mechanisms are often
+              fragmented, slow, and lack transparency. Many systems require
+              physical visits or manual follow-ups, which discourages citizen
+              participation and delays resolution. A centralized,
+              technology-driven web platform can bridge this gap by enabling
+              citizens to report real-world issues digitally while allowing
+              authorities to manage and resolve them efficiently.
             </p>
           </div>
           <div className="AboutWorldT">
-            <h2>Gameplay Experience</h2>
+            <h2>Problem Statement</h2>
+
+            <p>
+              The project addresses the problem of crowdsourced civic issue
+              reporting and resolution. There is currently no unified platform
+              that allows citizens to report issues easily, track their progress
+              transparently, and ensure accountability from concerned
+              authorities. At the same time, municipal bodies lack real-time
+              visibility into ground-level problems, making prioritization and
+              efficient resource allocation difficult. This system aims to
+              create a centralized digital bridge between citizens and local
+              authorities to improve governance and service delivery.
+            </p>
+          </div>
+          <div className="AboutWorldT">
+            <h2>Project Overview</h2>
+            <p>
+              This project is a full-stack web application designed to support
+              civic engagement through digital issue reporting and resolution
+              tracking. The platform provides a responsive web interface that
+              works seamlessly across desktops, tablets, and mobile browsers
+              without being limited to a mobile-only experience. Citizens can
+              submit civic issues through the web interface, while authorities
+              can monitor, manage, and resolve these issues through a
+              centralized administrative dashboard. The system emphasizes
+              accessibility, transparency, and scalability to support long-term
+              use across different regions.
+            </p>
+          </div>
+          <div className="AboutWorldT">
+            <h2>User Interaction and Community Engagement</h2>
             <div className="gameplayExpMotImg">
               <HorizontalImgRunIrr
-                folder={"/Project1"}
-                device={""}
+                folder={"/Pravdhan"}
+                device={"/Laptop"}
                 urls={imgURL}
                 MyPro={"MyProjects"}
                 durration={50}
               />
             </div>
             <p>
-              Players traverse a global map where each country is represented as
-              a unique property tile with its own strategic value. Landing on a
-              nation opens opportunities to purchase territory, expand
-              infrastructure, and generate income. The game blends turn-based
-              mechanics with real-time multiplayer interaction, ensuring smooth
-              gameplay while keeping all participants constantly engaged.
-            </p>
-            <p>
-              A centralized banking system manages all transactions, tracking
-              ownership, assets, and cash flow in real time. Players can also
-              liquidate their holdings by selling properties back to the bank,
-              allowing for flexible strategies when capital is tight—but at the
-              cost of long-term income.
+              The platform introduces a community-driven interaction model that
+              allows users to view civic issues reported near their location.
+              Users can upload problems they encounter and also engage with
+              issues posted by others by upvoting, commenting, and reacting. The
+              upvote mechanism plays a critical role in prioritization, as
+              issues with higher engagement gain more visibility and are treated
+              as higher priority for verification and resolution. While the
+              system incorporates interaction features similar to social
+              platforms, its focus remains strictly on civic participation and
+              collective problem-solving rather than social networking.
             </p>
           </div>
           <div className="AboutWorldT">
-            <h2>Core Game Mechanics</h2>
-            <h4>Dynamic Dice System</h4>
+            <h2>Administrative Workflow</h2>
             <p>
-              Dice rolls determine player movement across the world map,
-              introducing risk, probability, and strategic anticipation with
-              every turn.
-            </p>
-            <h4>Property Ownership & Ticket Status</h4>
-            <p>
-              Each country’s ownership is tracked in real time. Players must pay
-              rent when landing on rival territories or seize the opportunity to
-              acquire unclaimed nations.
-            </p>
-            <h4>Real-Time Turn Management</h4>
-            <p>
-              The server controls turn order and game state, ensuring
-              consistency and fairness while synchronizing every action across
-              connected players.
-            </p>
-            <h4>Persistent Game State</h4>
-            <p>
-              All moves, purchases, and financial changes are instantly
-              reflected for every player, creating a seamless and competitive
-              multiplayer environment.
+              On the administrative side, the platform provides a web-based
+              dashboard for municipal staff and authorities. Administrators can
+              view, filter, and categorize reported issues based on location,
+              issue type, and community engagement levels. The system uses
+              structured metadata and user interactions such as upvotes to
+              assist in prioritizing issues. Reports are routed to the relevant
+              departments, ensuring that problems are addressed through an
+              organized and traceable workflow. Status updates allow progress
+              tracking from report submission to resolution.
             </p>
           </div>
           <div className="AboutWorldT">
-            <h2>Strategic Depth</h2>
+            <h2>Expected Solution</h2>
             <p>
-              World Tycoon rewards players who think ahead. Whether you focus on
-              aggressive expansion, calculated investment, or cautious asset
-              management, success depends on reading the board, predicting
-              opponents’ moves, and knowing when to take risks. The balance
-              between growth and liquidity adds constant tension, making each
-              decision meaningful.
+              The final solution delivers a scalable full-stack web platform
+              that enables citizens to report issues, engage with
+              community-reported problems, and track resolution progress
+              transparently. Authorities benefit from a centralized system that
+              highlights high-priority issues based on collective input rather
+              than isolated complaints. The backend architecture is designed to
+              handle high volumes of concurrent users, image uploads, and
+              real-time interactions while maintaining consistent performance.
+              The platform is extensible and can support future enhancements or
+              integrations with governance systems.
             </p>
           </div>
           <div className="AboutWorldT">
+            <h2>Impact and Benefits</h2>
             <p>
-              World Tycoon is a game of economic warfare, strategic foresight,
-              and competitive dominance. Build your empire carefully—because in
-              this world, power is measured not by chance alone, but by the
-              assets you control and the decisions you make.
+              The platform empowers citizens by transforming them from passive
+              observers into active contributors in civic governance.
+              Community-driven engagement increases transparency and ensures
+              that urgent issues receive appropriate attention. Authorities gain
+              better visibility into real-world problems and can allocate
+              resources more effectively. The system reduces delays, improves
+              accountability, and strengthens trust between citizens and
+              governing bodies by making issue resolution a shared and visible
+              process.
+            </p>
+          </div>
+          <div className="AboutWorldT">
+            <h2>Environmental and Social Impact</h2>
+            <p>
+              By enabling faster identification of issues related to waste
+              management, pollution, water leakage, and sanitation, the platform
+              contributes to improved environmental conditions and public
+              health. Socially, the system encourages collective responsibility
+              and civic awareness by allowing communities to rally around common
+              problems. Transparent engagement mechanisms promote accountability
+              and foster a sense of shared ownership over public spaces.
+            </p>
+          </div>
+          <div className="AboutWorldT">
+            <h2>Feasibility and Viability</h2>
+            <p>
+              Technically, the project is feasible using modern web technologies
+              such as responsive frontends, geolocation services, image
+              handling, and scalable backend systems. Operationally, the
+              platform is intuitive for citizens and efficient for authorities
+              through its centralized dashboard. Economically, the solution is
+              cost-effective and can be supported through government funding,
+              CSR initiatives, or partnerships. Its modular design allows it to
+              scale from local deployments to city, state, or national
+              governance systems.
+            </p>
+          </div>
+          <div className="AboutWorldT">
+            <h2>Conclusion</h2>
+            <p>
+              This crowdsourced civic issue reporting and resolution system
+              redefines how citizens and authorities collaborate to improve
+              public infrastructure. By combining a full-stack web architecture
+              with community-driven engagement and structured administrative
+              workflows, the platform enables faster responses, greater
+              transparency, and stronger public trust. It serves as a practical
+              step toward smarter, more responsive, and accountable governance.
             </p>
           </div>
           <div className="AboutWorldT flex cont">
