@@ -205,7 +205,8 @@ const LocalConnectDetails = () => {
           </div>
           <div className="AboutWorldT flex cont">
             <p>
-              Want something like this built for you? <span>Contact me.</span>
+              Want something like this built for you?{" "}
+              <span onClick={() => navigate("/contactme")}>Contact me.</span>
             </p>
           </div>
           <div className="AboutWorldT flex cont hei">
