@@ -61,3 +61,23 @@
   color: #fca311;
 
 }
+@media (max-width:678px) {
+  .LocalDisCont{
+    width: 96.5%;
+    left: 1%;
+    height: 56%;
+  }
+  .LocalDisCont h1{
+font-size: 1.5rem;
+  }
+  .LocalConnectParaCont p{
+    font-size: 0.75rem;
+    line-height: 1.05;
+  }
+  .LocalConnectParaCont h3{
+    font-size: 0.9rem;
+  }
+  .LocalConnectParaCont h4{
+    font-size: 0.7rem;
+  }
+}

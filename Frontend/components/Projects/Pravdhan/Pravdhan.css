@@ -57,3 +57,34 @@
   color: #fca311;
 
 }
+@media (max-width: 678px) {
+  .PravDisCont {
+    /* position: relative; */
+    width: 100%;
+    left: 0;
+    top: 6%;
+    padding: 0 12px;
+    box-sizing: border-box;
+  height: 58%;
+
+  }
+  .PravConnectParaCont{
+    /* height: 40%; */
+  padding: 10px 16px;
+
+  }
+  .PravDisCont h1{
+  font-size: 1.5rem;  
+  }
+  .PravConnectParaCont p{
+    font-size: 0.71rem;
+  line-height: 1.1;
+
+  }
+  .PravConnectParaCont h3{
+    font-size: 0.9rem;
+  }
+  .PravConnectParaCont h4{
+    font-size: 0.74rem;
+  }
+}

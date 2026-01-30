@@ -17,3 +17,8 @@
   width: 24%;
   height: auto;
 }
+@media (max-width: 678px){
+  .PravConnectImageCont{
+    display: none;
+  }
+}

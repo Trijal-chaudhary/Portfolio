@@ -142,7 +142,7 @@ const Home = () => {
       </section>
       <section id="ContactMe" className="HomeCont section">
         <ContactMe />
-        <LinksBar />
+        {/* <LinksBar /> */}
       </section>
       <motion.div
         className="back"
