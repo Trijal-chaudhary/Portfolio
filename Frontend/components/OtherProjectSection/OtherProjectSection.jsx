@@ -31,6 +31,9 @@ const OtherProjectSection = () => {
     500px at ${x}px ${y}px,
     rgba(255,255,255,0.15),
     transparent 60%), #020617`;
+  const redirectUser = (where) => {
+    window.open(where, "_blank");
+  };
   const CamUrls = [
     "01.png",
     "02.png",
@@ -151,18 +154,15 @@ const OtherProjectSection = () => {
             <div className="LinksContProject1">
               <div className="LinksIons1 githubIcon">
                 <motion.img
+                  onClick={() =>
+                    redirectUser(
+                      "https://github.com/Trijal-chaudhary/CampusBuddy"
+                    )
+                  }
                   whileHover={anim}
                   src="./public/Icon/github.png"
                   title="GitHub Repo"
                   alt=""
-                />
-              </div>
-              <div className="LinksIons1 githubIcon">
-                <motion.img
-                  whileHover={anim}
-                  src="./public/Icon/redirect.png"
-                  alt=""
-                  title="Live Preview"
                 />
               </div>
             </div>
@@ -230,6 +230,11 @@ const OtherProjectSection = () => {
             <div className="LinksContProject1">
               <div className="LinksIons1 githubIcon">
                 <motion.img
+                  onClick={() =>
+                    redirectUser(
+                      "https://github.com/Trijal-chaudhary/TrijalMusic"
+                    )
+                  }
                   whileHover={anim}
                   src="./public/Icon/github.png"
                   title="GitHub Repo"
@@ -238,6 +243,9 @@ const OtherProjectSection = () => {
               </div>
               <div className="LinksIons1 githubIcon">
                 <motion.img
+                  onClick={() =>
+                    redirectUser("https://trijalmusic.netlify.app/")
+                  }
                   whileHover={anim}
                   src="./public/Icon/redirect.png"
                   alt=""

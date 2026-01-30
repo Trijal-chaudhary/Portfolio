@@ -11,6 +11,9 @@ const LocalConnect = () => {
     scale: 1.12,
     cursor: "pointer",
   });
+  const redirectUser = (where) => {
+    window.open(where, "_blank");
+  };
   const navigate = useNavigate();
   return (
     <div className="LocalConnectContPar">
@@ -54,6 +57,9 @@ const LocalConnect = () => {
       <div className="LinksContProject1">
         <div className="LinksIons1 githubIcon">
           <motion.img
+            onClick={() =>
+              redirectUser("https://github.com/Trijal-chaudhary/LocalConnect")
+            }
             whileHover={anim}
             src="./public/Icon/github.png"
             title="GitHub Repo"
@@ -62,6 +68,9 @@ const LocalConnect = () => {
         </div>
         <div className="LinksIons1 githubIcon">
           <motion.img
+            onClick={() =>
+              redirectUser("https://localconnect-p703.onrender.com/")
+            }
             whileHover={anim}
             src="./public/Icon/redirect.png"
             alt=""

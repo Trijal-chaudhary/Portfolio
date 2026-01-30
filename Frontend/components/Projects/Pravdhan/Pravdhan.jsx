@@ -11,6 +11,9 @@ const Pravdhan = () => {
     scale: 1.12,
     cursor: "pointer",
   });
+  const redirectUser = (where) => {
+    window.open(where, "_blank");
+  };
   const navigate = useNavigate();
   return (
     <div className="LocalConnectContPar">
@@ -61,6 +64,9 @@ const Pravdhan = () => {
       <div className="LinksContProject1">
         <div className="LinksIons1 githubIcon">
           <motion.img
+            onClick={() =>
+              redirectUser("https://github.com/Trijal-chaudhary/Pravadhan")
+            }
             whileHover={anim}
             src="./public/Icon/github.png"
             title="GitHub Repo"

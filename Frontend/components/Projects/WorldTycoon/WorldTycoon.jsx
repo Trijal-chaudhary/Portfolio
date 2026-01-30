@@ -11,6 +11,9 @@ const WorldTycoon = () => {
     scale: 1.12,
     cursor: "pointer",
   });
+  const redirectUser = (where) => {
+    window.open(where, "_blank");
+  };
   const navigate = useNavigate();
   return (
     <>
@@ -79,6 +82,11 @@ const WorldTycoon = () => {
           <div className="LinksIons1 githubIcon">
             <motion.img
               whileHover={anim}
+              onClick={() =>
+                redirectUser(
+                  "https://github.com/Trijal-chaudhary/World-Tycoon-V1.1"
+                )
+              }
               src="./public/Icon/github.png"
               title="GitHub Repo"
               alt=""
@@ -86,6 +94,7 @@ const WorldTycoon = () => {
           </div>
           <div className="LinksIons1 githubIcon">
             <motion.img
+              onClick={() => redirectUser("https://world-tycoon.onrender.com/")}
               whileHover={anim}
               src="./public/Icon/redirect.png"
               alt=""

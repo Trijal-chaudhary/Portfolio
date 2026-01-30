@@ -10,6 +10,9 @@ const OtherProjects = ({ MyPro }) => {
     scale: 1.12,
     cursor: "pointer",
   });
+  const redirectUser = (where) => {
+    window.open(where, "_blank");
+  };
   const navigate = useNavigate();
   const imgURL = [
     "01.png",
@@ -56,6 +59,7 @@ const OtherProjects = ({ MyPro }) => {
       <div className="LinksContProject1">
         <div className="LinksIons1 githubIcon">
           <motion.img
+            onClick={() => redirectUser("https://github.com/Trijal-chaudhary")}
             whileHover={anim}
             src="./public/Icon/github.png"
             title="GitHub Repo"
@@ -64,6 +68,7 @@ const OtherProjects = ({ MyPro }) => {
         </div>
         <div className="LinksIons1 githubIcon">
           <motion.img
+            onClick={() => navigate("/otherProjects")}
             whileHover={anim}
             src="./public/Icon/redirect.png"
             alt=""
