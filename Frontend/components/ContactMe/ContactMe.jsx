@@ -2,6 +2,7 @@ import React from "react";
 import "./ContactMe.css";
 import { motion } from "framer-motion";
 import { postingMessage } from "../../src/services/fetching";
+import { useNavigate } from "react-router-dom";
 const ContactMe = ({ redit }) => {
   const anim = () => ({
     scale: 1.12,
@@ -9,6 +10,19 @@ const ContactMe = ({ redit }) => {
   });
   const redirectUser = (where) => {
     window.open(where, "_blank");
+  };
+  const navigate = useNavigate();
+  const handelSummit = (e) => {
+    e.preventDefault();
+    postingMessage({
+      name: e.target.name.value,
+      email: e.target.email.value,
+      subject: e.target.subject.value,
+      message: e.target.message.value,
+    }).then(() => {
+      alert("message sended succesfully");
+      navigate("/");
+    });
   };
   return (
     <div
@@ -20,17 +34,7 @@ const ContactMe = ({ redit }) => {
         <div className="contactImgCont">
           <img src="images/heroPhoroBG.png" alt="Harsh Vardhan" />
         </div>
-        <form
-          onSubmit={(e) => {
-            e.preventDefault();
-            postingMessage({
-              name: e.target.name.value,
-              email: e.target.email.value,
-              subject: e.target.subject.value,
-              message: e.target.message.value,
-            });
-          }}
-        >
+        <form onSubmit={handelSummit}>
           <input type="text" name="name" placeholder="Your Name" required />
           <input type="email" name="email" placeholder="Your Email" required />
           <input type="text" name="subject" placeholder="Subject" required />
