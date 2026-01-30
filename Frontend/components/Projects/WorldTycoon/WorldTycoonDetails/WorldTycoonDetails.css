@@ -1,4 +1,4 @@
-.WorldTyDetMainOuter{
+.WorldTyDetMainOuter {
   width: 100vw;
   display: flex;
   /* justify-content: center; */
@@ -6,7 +6,7 @@
   align-items: center;
   gap: 10px;
 }
-.WorldTycoonVid{
+.WorldTycoonVid {
   width: 70%;
   /* margin-top: 7%; */
   display: flex;
@@ -21,12 +21,12 @@
 
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
-.youtubeFrame{
+.youtubeFrame {
   width: 95%;
   aspect-ratio: 16/9;
   height: auto;
 }
-.AboutWorldT{
+.AboutWorldT {
   border-radius: 14px;
   background: rgba(255, 255, 255, 0.05);
 
@@ -39,26 +39,21 @@
   gap: 8px;
   width: 92%;
 }
-.AboutWorldT p{
+.AboutWorldT p {
   font-size: 1.1rem;
   line-height: 1.6;
   color: rgba(240, 248, 255, 0.9);
   text-align: justify;
 }
-.AboutWorldT h2{
+.AboutWorldT h2 {
   font-size: 1.5rem;
   font-weight: 600;
 
-  background: linear-gradient(
-    to right,
-    #b86b00,
-    #fca311,
-    #ffd166
-  );
+  background: linear-gradient(to right, #b86b00, #fca311, #ffd166);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.ImageProject12{
+.ImageProject12 {
   height: 6rem;
   width: auto;
   /* position: absolute; */
@@ -66,7 +61,7 @@
   top: 1%;
   z-index: 10;
 }
-.gameplayExpMotImg{
+.gameplayExpMotImg {
   width: 90%;
   height: 300px;
   overflow: hidden;
@@ -75,42 +70,65 @@
   margin-bottom: 20px;
   -webkit-mask-image: linear-gradient(
     to right,
-    rgba(0,0,0,0),
-    rgba(0,0,0,1) 20%,
-    rgba(0,0,0,1) 80%,
-    rgba(0,0,0,0)
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0)
   );
 
   mask-image: linear-gradient(
     to right,
-    rgba(0,0,0,0),
-    rgba(0,0,0,1) 20%,
-    rgba(0,0,0,1) 80%,
-    rgba(0,0,0,0)
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0)
   );
 }
-.flex{
+.flex {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.cont span{
+.cont span {
   color: lightblue;
   cursor: pointer;
 }
-.cont span:hover{
+.cont span:hover {
   text-decoration: underline lightseagreen;
 }
-.homeSVG{
+.homeSVG {
   height: 35px;
   fill: white;
-  position:fixed;
   top: 3%;
   /* left: 15%; */
   left: 10%;
   cursor: pointer;
+  margin-top: 2%;
+  margin-left: 4%;
 }
-.homeSVG:hover{
+.homeSVG:hover {
   fill: #fca311;
   scale: 1.05;
+}
+@media (max-width: 678px) {
+  .worldimg {
+    height: 60px;
+  }
+  .WorldTycoonVid {
+    width: 85%;
+  }
+  .AboutWorldT {
+    width: 88%;
+  }
+  .AboutWorldT p {
+    font-size: 0.85rem;
+    line-height: 1.2;
+  }
+  .AboutWorldT h2 {
+    font-size: 1.3rem;
+  }
+  .gameplayExpMotImg {
+    height: 150px;
+    margin-left: 20px;
+  }
 }

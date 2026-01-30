@@ -53,7 +53,7 @@ const PravdhanDetails = () => {
       </svg>
       <div className="WorldTyDetMainOuter">
         <img
-          className="ImageProject12"
+          className="ImageProject12 worldimg"
           src="Project/Pravdhan/logo.png"
           alt=""
         />
