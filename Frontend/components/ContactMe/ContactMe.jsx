@@ -1,7 +1,7 @@
 import React from "react";
 import "./ContactMe.css";
 import { motion } from "framer-motion";
-const ContactMe = () => {
+const ContactMe = ({ redit }) => {
   const anim = () => ({
     scale: 1.12,
     cursor: "pointer",
@@ -10,7 +10,10 @@ const ContactMe = () => {
     window.open(where, "_blank");
   };
   return (
-    <div className="ContactMeMainCont">
+    <div
+      className="ContactMeMainCont"
+      style={redit ? { background: "#020617" } : {}}
+    >
       <h2 className="ContactMeTxt">Get In Touch</h2>
       <div className="ContactInfoCont">
         <div className="contactImgCont">

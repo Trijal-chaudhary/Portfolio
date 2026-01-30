@@ -1,4 +1,5 @@
 import AboutMePage from "../components/AboutMePage/AboutMePage";
+import ContactMe from "../components/ContactMe/ContactMe";
 import Home from "../components/Home";
 import OtherProjectSection from "../components/OtherProjectSection/OtherProjectSection";
 import LocalConnectDetails from "../components/Projects/LocalConnect/LocalConnectDetails";
@@ -18,6 +19,7 @@ function App() {
           <Route path="/localConnect" element={<LocalConnectDetails />} />
           <Route path="/pravdhan" element={<PravdhanDetails />} />
           <Route path="/otherProjects" element={<OtherProjectSection />} />
+          <Route path="/contactme" element={<ContactMe redit={true} />} />
         </Routes>
       </BrowserRouter>
     </>

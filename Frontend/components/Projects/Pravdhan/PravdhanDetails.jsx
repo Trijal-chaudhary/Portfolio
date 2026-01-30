@@ -22,6 +22,10 @@ const PravdhanDetails = () => {
     window.addEventListener("mousemove", track);
     return () => window.removeEventListener("mousemove", track);
   }, []);
+  const anim = () => ({
+    scale: 1.12,
+    cursor: "pointer",
+  });
   const background = useMotionTemplate`
     radial-gradient(
     500px at ${x}px ${y}px,
@@ -40,6 +44,9 @@ const PravdhanDetails = () => {
     "10.png",
     "11.png",
   ];
+  const redirectUser = (where) => {
+    window.open(where, "_blank");
+  };
   const navigate = useNavigate();
   return (
     <>
@@ -218,6 +225,23 @@ const PravdhanDetails = () => {
             <p>
               Want something like this built for you? <span>Contact me.</span>
             </p>
+          </div>
+          <div className="AboutWorldT flex cont hei">
+            <div className="LinksContProject1 flexCenter">
+              <div className="LinksIons1 githubIcon">
+                <motion.img
+                  onClick={() =>
+                    redirectUser(
+                      "https://github.com/Trijal-chaudhary/Pravadhan"
+                    )
+                  }
+                  whileHover={anim}
+                  src="./public/Icon/github.png"
+                  title="GitHub Repo"
+                  alt=""
+                />
+              </div>
+            </div>
           </div>
         </div>
         {[0, 1, 3, 4, 5].map((i) => (

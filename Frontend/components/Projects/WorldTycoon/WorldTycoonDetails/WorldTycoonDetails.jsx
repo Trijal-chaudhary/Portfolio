@@ -22,6 +22,13 @@ const WorldTycoonDetails = () => {
     window.addEventListener("mousemove", track);
     return () => window.removeEventListener("mousemove", track);
   }, []);
+  const anim = () => ({
+    scale: 1.12,
+    cursor: "pointer",
+  });
+  const redirectUser = (where) => {
+    window.open(where, "_blank");
+  };
   const background = useMotionTemplate`
     radial-gradient(
     500px at ${x}px ${y}px,
@@ -162,8 +169,37 @@ const WorldTycoonDetails = () => {
           </div>
           <div className="AboutWorldT flex cont">
             <p>
-              Want something like this built for you? <span>Contact me.</span>
+              Want something like this built for you?{" "}
+              <span onClick={() => navigate("/contactme")}>Contact me.</span>
             </p>
+          </div>
+          <div className="AboutWorldT flex cont hei">
+            <div className="LinksContProject1 flexCenter">
+              <div className="LinksIons1 githubIcon">
+                <motion.img
+                  whileHover={anim}
+                  onClick={() =>
+                    redirectUser(
+                      "https://github.com/Trijal-chaudhary/World-Tycoon-V1.1"
+                    )
+                  }
+                  src="./public/Icon/github.png"
+                  title="GitHub Repo"
+                  alt=""
+                />
+              </div>
+              <div className="LinksIons1 githubIcon">
+                <motion.img
+                  onClick={() =>
+                    redirectUser("https://world-tycoon.onrender.com/")
+                  }
+                  whileHover={anim}
+                  src="./public/Icon/redirect.png"
+                  alt=""
+                  title="Live Preview"
+                />
+              </div>
+            </div>
           </div>
         </div>
         {[0, 1, 3, 4, 5].map((i) => (
