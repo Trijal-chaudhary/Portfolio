@@ -1,6 +1,7 @@
 import React from "react";
 import "./ContactMe.css";
 import { motion } from "framer-motion";
+import { postingMessage } from "../../src/services/fetching";
 const ContactMe = ({ redit }) => {
   const anim = () => ({
     scale: 1.12,
@@ -19,11 +20,25 @@ const ContactMe = ({ redit }) => {
         <div className="contactImgCont">
           <img src="images/heroPhoroBG.png" alt="Harsh Vardhan" />
         </div>
-        <form>
-          <input type="text" name="name" placeholder="Your Name" />
-          <input type="email" name="email" placeholder="Your Email" />
-          <input type="text" name="subject" placeholder="Subject" />
-          <textarea name="message" placeholder="Your Message"></textarea>
+        <form
+          onSubmit={(e) => {
+            e.preventDefault();
+            postingMessage({
+              name: e.target.name.value,
+              email: e.target.email.value,
+              subject: e.target.subject.value,
+              message: e.target.message.value,
+            });
+          }}
+        >
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <input type="text" name="subject" placeholder="Subject" required />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            required
+          ></textarea>
           <button type="submit">Send Message</button>
         </form>
       </div>
