@@ -1,0 +1,22 @@
+.HeroImageCam{
+  width: 95%;
+  height: auto;
+}
+.CampusBuddy{
+  padding: 30px;
+}
+.Camp{
+  background: linear-gradient(
+    to right,
+    #b86b00,
+    #fca311,
+    #ffd166
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 1000;
+  margin-bottom: 10px;
+}
+.hei{
+  height: 60px;
+}

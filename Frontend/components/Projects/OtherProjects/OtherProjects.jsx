@@ -4,11 +4,13 @@ import HorizontalImgRunIrr from "../../HorizontalImgRun/HorizontalImgRunIrr";
 import HorizontalImgRunRev from "../../HorizontalImgRun/HorizontalImgRunRev";
 import ButtonHover from "../../ButtonHover/ButtonHover";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 const OtherProjects = ({ MyPro }) => {
   const anim = () => ({
     scale: 1.12,
     cursor: "pointer",
   });
+  const navigate = useNavigate();
   const imgURL = [
     "01.png",
     "02.png",
@@ -69,7 +71,9 @@ const OtherProjects = ({ MyPro }) => {
           />
         </div>
       </div>
-      <ButtonHover text={"Explore"} />
+      <div onClick={() => navigate("/otherProjects")}>
+        <ButtonHover text={"Explore"} />
+      </div>
     </div>
   );
 };

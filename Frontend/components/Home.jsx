@@ -58,6 +58,9 @@ const Home = () => {
     window.addEventListener("mousemove", track);
     return () => window.removeEventListener("mousemove", track);
   }, []);
+  const redirectUser = (where) => {
+    window.open(where, "_blank");
+  };
   const ScrollToSection = (id) => {
     const section = document.getElementById(id);
     section?.scrollIntoView({ behavior: "smooth" });
