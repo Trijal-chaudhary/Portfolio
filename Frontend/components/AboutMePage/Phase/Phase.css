@@ -65,3 +65,39 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@media (max-width:678px){
+  .PhaseDataCont img{
+    display:none;
+  }
+  .partionBar{
+    display: none;
+  }
+  .PhaseManiOuterCont{
+    align-items: start;
+    margin-top: 25%;
+  }
+  .PhaseDataCont{
+    height: 60%;
+    width: 90%;
+    overflow: hidden;
+  }
+  .WhatPhaseCOnt p{
+    font-size: 0.76rem;
+    line-height: 1.1;
+  }
+  .WhatPhaseCOnt h2{
+    font-size: 1rem;
+
+  }
+  .WhatPhaseCOnt{
+    gap: 4px;
+  padding: 6px 12px;
+
+  }
+  .paraPhaseCOnt{
+    font-size: 1rem;
+  }
+  .PhaseDataCont{
+    gap: 0.5rem;
+  }
+}

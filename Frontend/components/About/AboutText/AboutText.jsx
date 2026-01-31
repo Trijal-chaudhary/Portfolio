@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import "./AboutText.css";
+import { useNavigate } from "react-router-dom";
 const AboutText = () => {
   const [hover, sethover] = useState(false);
+  const navigate = useNavigate();
   return (
     <>
       <div className="AbTexOuter">
@@ -68,9 +70,11 @@ const AboutText = () => {
           transition={{ duration: 0.4, ease: "easeIn" }}
           className="DotScalable"
         ></motion.div>
-        <motion.h2 animate={hover ? { x: 5, scale: 1.05 } : {}}>
-          Get To Know Me ➜
-        </motion.h2>
+        <div onClick={() => navigate("/about")}>
+          <motion.h2 animate={hover ? { x: 5, scale: 1.05 } : {}}>
+            Get To Know Me ➜
+          </motion.h2>
+        </div>
       </div>
     </>
   );
