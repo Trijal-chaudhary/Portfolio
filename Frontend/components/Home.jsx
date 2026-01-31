@@ -24,6 +24,7 @@ import PravdhanImage from "./Projects/Pravdhan/PravdhanImage";
 import Pravdhan from "./Projects/Pravdhan/Pravdhan";
 import OtherProjects from "./Projects/OtherProjects/OtherProjects";
 import ContactMe from "./ContactMe/ContactMe";
+import { viewCount } from "../src/services/fetching";
 const Home = () => {
   const [renderStars, setRanderStars] = useState([]);
   const mousex = useMotionValue(0);
@@ -58,7 +59,9 @@ const Home = () => {
     window.addEventListener("mousemove", track);
     return () => window.removeEventListener("mousemove", track);
   }, []);
-
+  useEffect(() => {
+    viewCount();
+  }, []);
   const ScrollToSection = (id) => {
     const section = document.getElementById(id);
     section?.scrollIntoView({ behavior: "smooth" });
