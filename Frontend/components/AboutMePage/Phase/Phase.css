@@ -1,0 +1,67 @@
+.PhaseManiOuterCont{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.PhaseDataCont{
+  display: flex;
+  width: 80%;
+  height: 60%;
+  align-items: center;
+  
+  gap: 1.5rem;
+}
+.PhaseDataCont img{
+  width: auto;
+  height: 100%;
+}
+.paraPhaseCOnt{
+  gap: 1.5rem;
+  padding: 15px;
+  border-radius: 14px;
+  display: flex;
+  padding: 20px 22px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.partionBar{
+  height: 100%;
+  width: 2%;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.2);
+
+  backdrop-filter: blur(14px);
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.WhatPhaseCOnt{
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.05);
+
+  backdrop-filter: blur(14px);
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 10px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 92%;
+}
+.WhatPhaseCOnt p{
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: rgba(240, 248, 255, 0.9);
+  text-align: justify;
+}
+.WhatPhaseCOnt h2{
+  font-size: 1.5rem;
+  font-weight: 600;
+
+  background: linear-gradient(to right, #b86b00, #fca311, #ffd166);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

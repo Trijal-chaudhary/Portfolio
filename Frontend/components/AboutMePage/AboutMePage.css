@@ -1,5 +1,5 @@
 .AboutPageOuterMain{
-  height: 200vh;
+  min-height: 200vh;
   width: 100vw;
   position: relative;
 }
@@ -21,6 +21,7 @@
   transform: translateX(-50%);
   background: rgba(255,255,255,0.2);
   overflow: hidden;
+  z-index: 999;
 }
 
 .innerBar {
@@ -30,4 +31,30 @@
   position: absolute;
   top: 0;
 }
-
+.BackSvg{
+  fill: white;
+  height: 50px;
+  width: auto;
+  position: absolute;
+  bottom: 10%;
+  left: 2%;
+  z-index: 200;
+  cursor: pointer;
+}
+.BackSvg:hover{
+  fill: gold;
+  scale: 1.05;
+}
+.ScrollDownImgCOnt{
+  position: absolute;
+  top: 84%;
+  width: 100px;
+  left: 48%;
+  overflow: hidden;
+}
+.ScrollDownImgCOnt img{
+  position: absolute;
+  filter: invert(1);
+  height: 100px;
+  width: auto;
+}

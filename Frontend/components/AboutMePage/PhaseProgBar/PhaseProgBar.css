@@ -1,0 +1,51 @@
+.outerPhaseProgBarCont{
+  position: fixed;
+  width: 99vw;
+  height: 13%;
+  top: 0%;
+  padding: 20px, 0px;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+  /* justify-content: center; */
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  /* background: rgba(255, 255, 255, 0.2); */
+
+  backdrop-filter: blur(14px);
+
+  /* border: 1px solid rgba(255, 255, 255, 0.18); */
+}
+.AllImgPhaseCont{
+  height: 90%;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.AllImgPhaseCont img{
+  height: 70%;
+  width: auto;
+  opacity: 0;
+}
+.outerPhaseProgBar{
+  height: 15%;
+  width: 95%;
+  background: rgba(255, 255, 255, 0.2);
+
+  backdrop-filter: blur(14px);
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  display: flex;
+}
+.innerPhaseProgBar{
+  height: 100%;
+  width: 25%;
+  border-right: 2px solid aqua;
+  border-left: 2px solid aqua;
+}
+.innerInnerPhaseCont{
+  height: 100%;
+  background-color: gold;
+}
