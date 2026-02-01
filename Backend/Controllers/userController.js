@@ -2,7 +2,18 @@ const Message = require("../Models/MessageModel");
 const views = require("../Models/viewsModel");
 exports.postContactMe = async (req, res) => {
   try {
-    const mess = new Message(req.body);
+    const { name, email, subject, message } = req.body;
+    const now = new Date();
+    const formattedDate = now.toLocaleDateString("en-IN");
+    const formattedTime = now.toLocaleTimeString("en-IN");
+    const mess = new Message({
+      name,
+      email,
+      subject,
+      message,
+      date: formattedDate,
+      time: formattedTime,
+    });
     await mess.save();
     res.status(201).json({ message: "success" });
   } catch (err) {
