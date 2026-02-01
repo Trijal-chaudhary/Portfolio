@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 const DBUrl = process.env.DBUrl;
 app.use(cors({
-  origin: ["http://localhost:5173", "http://192.168.0.109:5173"],
+  origin: ["http://localhost:5173", "http://192.168.0.109:5173", "https://harshportfolio-e2u3.onrender.com"],
   credentials: true
 }))
 

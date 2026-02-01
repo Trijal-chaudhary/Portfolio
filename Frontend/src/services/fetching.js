@@ -1,5 +1,5 @@
-const arr = ["http://192.168.0.109:3000/", "http://localhost:3000/"]
-const IPadd = arr[0]
+const arr = ["http://192.168.0.109:3000/", "http://localhost:3000/", "https://portfolio-4j8o.onrender.com/"]
+const IPadd = arr[2]
 export const postingMessage = async (what) => {
   const response = await fetch(`${IPadd}contact`, {
     method: "POST",
@@ -9,7 +9,7 @@ export const postingMessage = async (what) => {
     body: JSON.stringify(what),
     credentials: "include"
   })
-  return response.json()
+  return response.json();
 }
 
 export const viewCount = async () => {
