@@ -19,7 +19,7 @@ const LinksBar = () => {
             )
           }
           whileHover={anim}
-          src="./public/Icon/Linkdin.svg"
+          src="Icon/Linkdin.svg"
           alt=""
         />
       </div>
@@ -27,7 +27,7 @@ const LinksBar = () => {
         <motion.img
           onClick={() => redirectUser("https://github.com/Trijal-chaudhary")}
           whileHover={anim}
-          src="./public/Icon/github.png"
+          src="Icon/github.png"
           alt=""
         />
       </div>
@@ -37,7 +37,7 @@ const LinksBar = () => {
             redirectUser("https://www.instagram.com/trijal_chaudhary_/")
           }
           whileHover={anim}
-          src="./public/Icon/insta.png"
+          src="Icon/insta.png"
           alt=""
         />
       </div>
@@ -47,7 +47,7 @@ const LinksBar = () => {
             redirectUser("https://www.youtube.com/@HarshVardhanChaudhary-g1o8z")
           }
           whileHover={anim}
-          src="./public/Icon/yt.png"
+          src="Icon/yt.png"
           alt=""
         />
       </div>
