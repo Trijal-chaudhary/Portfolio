@@ -4,8 +4,13 @@ exports.postContactMe = async (req, res) => {
   try {
     const { name, email, subject, message } = req.body;
     const now = new Date();
-    const formattedDate = now.toLocaleDateString("en-IN");
-    const formattedTime = now.toLocaleTimeString("en-IN");
+    const formattedTime = now.toLocaleTimeString("en-IN", {
+      timeZone: "Asia/Kolkata",
+    });
+
+    const formattedDate = now.toLocaleDateString("en-IN", {
+      timeZone: "Asia/Kolkata",
+    });
     const mess = new Message({
       name,
       email,

@@ -25,6 +25,7 @@ import Pravdhan from "./Projects/Pravdhan/Pravdhan";
 import OtherProjects from "./Projects/OtherProjects/OtherProjects";
 import ContactMe from "./ContactMe/ContactMe";
 import { viewCount } from "../src/services/fetching";
+import LoadingScreen from "./LoadingScreen/LoadingScreen";
 const Home = () => {
   const [renderStars, setRanderStars] = useState([]);
   const mousex = useMotionValue(0);
@@ -32,6 +33,7 @@ const Home = () => {
   const [currSection, setCurrSection] = useState(null);
   const x = useSpring(mousex);
   const y = useSpring(mousey);
+  const [renderLoading, setRenderLoading] = useState(false);
   const world = [
     "React.js",
     "Node.js",
@@ -144,7 +146,7 @@ const Home = () => {
         <OtherProjects MyPro={currSection} />
       </section>
       <section id="ContactMe" className="HomeCont section">
-        <ContactMe />
+        <ContactMe setRenderLoading={setRenderLoading} />
         {/* <LinksBar /> */}
       </section>
       <motion.div
