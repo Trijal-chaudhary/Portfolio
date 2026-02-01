@@ -61,7 +61,7 @@ const LocalConnect = () => {
               redirectUser("https://github.com/Trijal-chaudhary/LocalConnect")
             }
             whileHover={anim}
-            src="./public/Icon/github.png"
+            src="Icon/github.png"
             title="GitHub Repo"
             alt=""
           />
@@ -72,7 +72,7 @@ const LocalConnect = () => {
               redirectUser("https://localconnect-p703.onrender.com/")
             }
             whileHover={anim}
-            src="./public/Icon/redirect.png"
+            src="Icon/redirect.png"
             alt=""
             title="Live Preview"
           />

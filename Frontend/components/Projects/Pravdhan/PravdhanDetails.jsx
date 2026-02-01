@@ -237,7 +237,7 @@ const PravdhanDetails = () => {
                     )
                   }
                   whileHover={anim}
-                  src="./public/Icon/github.png"
+                  src="Icon/github.png"
                   title="GitHub Repo"
                   alt=""
                 />

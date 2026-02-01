@@ -61,7 +61,7 @@ const OtherProjects = ({ MyPro }) => {
           <motion.img
             onClick={() => redirectUser("https://github.com/Trijal-chaudhary")}
             whileHover={anim}
-            src="./public/Icon/github.png"
+            src="Icon/github.png"
             title="GitHub Repo"
             alt=""
           />
@@ -70,7 +70,7 @@ const OtherProjects = ({ MyPro }) => {
           <motion.img
             onClick={() => navigate("/otherProjects")}
             whileHover={anim}
-            src="./public/Icon/redirect.png"
+            src="Icon/redirect.png"
             alt=""
             title="View Details"
           />

@@ -183,7 +183,7 @@ const WorldTycoonDetails = () => {
                       "https://github.com/Trijal-chaudhary/World-Tycoon-V1.1"
                     )
                   }
-                  src="./public/Icon/github.png"
+                  src="Icon/github.png"
                   title="GitHub Repo"
                   alt=""
                 />
@@ -194,7 +194,7 @@ const WorldTycoonDetails = () => {
                     redirectUser("https://world-tycoon.onrender.com/")
                   }
                   whileHover={anim}
-                  src="./public/Icon/redirect.png"
+                  src="Icon/redirect.png"
                   alt=""
                   title="Live Preview"
                 />

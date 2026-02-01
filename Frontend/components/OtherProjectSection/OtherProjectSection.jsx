@@ -160,7 +160,7 @@ const OtherProjectSection = () => {
                     )
                   }
                   whileHover={anim}
-                  src="./public/Icon/github.png"
+                  src="Icon/github.png"
                   title="GitHub Repo"
                   alt=""
                 />
@@ -236,7 +236,7 @@ const OtherProjectSection = () => {
                     )
                   }
                   whileHover={anim}
-                  src="./public/Icon/github.png"
+                  src="Icon/github.png"
                   title="GitHub Repo"
                   alt=""
                 />
@@ -247,7 +247,7 @@ const OtherProjectSection = () => {
                     redirectUser("https://trijalmusic.netlify.app/")
                   }
                   whileHover={anim}
-                  src="./public/Icon/redirect.png"
+                  src="Icon/redirect.png"
                   alt=""
                   title="Live Preview"
                 />
