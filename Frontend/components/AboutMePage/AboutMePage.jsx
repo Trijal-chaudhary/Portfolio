@@ -83,19 +83,9 @@ const AboutMePage = () => {
           url={"images/Phase01.png"}
           ph={"1. The Curiosity & Imagination Phase"}
           p1={"(Early childhood)"}
-          p2={`This phase represents the foundation of my thinking and
-              mindset.From the early age, I was drawn towards creative things,
-              and I had a great imagining power to some extent, and from combing
-              both i always found myself doing something creative, like for
-              example if i were to talk about, one time I had build a vending
-              machine of cardboard`}
-          p3={`Playing games on my old laptop also helped me to thing better, I
-              was always curious like how this character is moving and the
-              environment it rendering, these were always my question at that
-              time.`}
-          p4={`without just playing games and enjoying myself, i started to thing
-              more technical way, which shapes my creative and imagining power,
-              this phase was the root of my journey.`}
+          p2={`This phase represents the foundation of my thinking and mindset. From an early age, I was naturally drawn toward creative activities and had a strong sense of imagination. By combining curiosity with creativity, I often found myself building or designing things on my own. One such experience was creating a cardboard vending machine, which reflects how I enjoyed turning ideas into tangible creations.`}
+          p3={`Playing games on my old laptop further strengthened my curiosity. Beyond entertainment, I constantly questioned how things worked behind the scenes—how characters moved, how environments were rendered, and how interactions were controlled. These questions sparked an early interest in understanding systems rather than simply using them.`}
+          p4={`Over time, I began approaching these experiences in a more technical and analytical way. Instead of just enjoying creativity, I started thinking about structure, logic, and process. This shift significantly shaped my imagination and problem-solving mindset, making this phase the root of my journey into technology and engineering`}
         />
       </section>
       <section id="2" className="HomeCont sectionPhase">
@@ -103,9 +93,9 @@ const AboutMePage = () => {
           url={"images/Phase02.png"}
           ph={"2. The Exploration & Awareness Phase"}
           p1={"(Pre-teen to early teenage years)"}
-          p2={`In this phase, I started to explore more technical things,  to develop technical thinking ability, I moved beyond from curiosity and started exploring technical things, now the use of computer become more experimental in my day to day life.`}
-          p3={`I explore the basic computer software's, which develop the creative and technical thinking, during this time I develop a key interest in the house layouts and visual designs, i always imaging how the house will be turn out if it do this or that.`}
-          p4={`In this phase i develop the ability to visualize things before building it, and before I knew it become my habit.`}
+          p2={`In this phase, I began exploring technical concepts more deeply and focused on developing a structured way of thinking. I moved beyond pure curiosity and started using computers in a more experimental and purposeful manner as part of my everyday activities.`}
+          p3={`I explored basic computer software, which helped strengthen both my creative and technical thinking. During this time, I developed a strong interest in house layouts and visual design. I would often imagine how a house might look if certain changes were made, experimenting mentally with structure, space, and functionality.`}
+          p4={`Through these experiences, I developed the ability to visualize outcomes before building them. What started as imagination gradually turned into a habit of planning and thinking ahead—an approach that continues to guide how I design, build, and solve problems today.`}
         />
       </section>
       <section id="3" className="HomeCont sectionPhase">
